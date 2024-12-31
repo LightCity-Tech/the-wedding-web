@@ -47,7 +47,7 @@ const CountupTimer: React.FC<ElapsedTimeProps> = ({ targetDate }) => {
         <div key={interval} className="relative">
           {/* Previous value sliding out */}
           <div
-            className={`absolute inset-0 text-pastor-blue transition-transform duration-500 ease-in-out ${
+            className={`absolute inset-0 text-tochi-brown transition-transform duration-500 ease-in-out ${
               prevTimeElapsed[interval as keyof TimeElapsed] !== timeElapsed[interval as keyof TimeElapsed]
                 ? ""
                 : "opacity-0"
