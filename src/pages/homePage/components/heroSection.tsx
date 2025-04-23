@@ -95,7 +95,7 @@ const HeroSection = () => {
           ) : (
             <div className="relative z-[1] my-6 flex justify-center items-center gap-1 mxs:flex-col">
               <CountupTimer targetDate={targetDate} />
-              <p className="text-lg text-tochi-brown mmd:text-sm">GONE!</p>
+              <p className="text-lg text-tochi-brown mmd:text-sm">AFTER!</p>
             </div>
           )}
         </div>

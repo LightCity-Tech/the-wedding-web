@@ -47,7 +47,7 @@ const CountupTimer: React.FC<ElapsedTimeProps> = ({ targetDate }) => {
         <div key={interval} className="relative">
           {/* Previous value sliding out */}
           <div
-            className={`absolute inset-0 text-pastor-blue transition-transform duration-500 ease-in-out ${
+            className={`absolute inset-0 text-tochi-brown transition-transform duration-500 ease-in-out ${
               prevTimeElapsed[interval as keyof TimeElapsed] !== timeElapsed[interval as keyof TimeElapsed]
                 ? ""
                 : "opacity-0"
@@ -58,7 +58,7 @@ const CountupTimer: React.FC<ElapsedTimeProps> = ({ targetDate }) => {
 
           {/* Current value sliding in */}
           <div
-            className={`relative z-10 text-pastor-blue transition-transform duration-500 ease-in-out ${
+            className={`relative z-10 text-tochi-brown transition-transform duration-500 ease-in-out ${
               prevTimeElapsed[interval as keyof TimeElapsed] !== timeElapsed[interval as keyof TimeElapsed]
                 ? "opacity-0"
                 : ""
@@ -68,7 +68,7 @@ const CountupTimer: React.FC<ElapsedTimeProps> = ({ targetDate }) => {
           </div>
 
           {/* Label */}
-          <p className="text-sm text-gray-500">{interval}</p>
+          <p className="text-sm text-tochi-brown">{interval}</p>
         </div>
       ))}
     </div>
